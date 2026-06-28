@@ -91,7 +91,7 @@ body {
 .hero::after {
   content: "☘︎";
   position: absolute;
-  left: 24px;
+  left: 18px;
   bottom: -12px;
   color: rgba(142, 190, 154, 0.22);
   font-size: 7rem;
