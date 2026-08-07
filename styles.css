@@ -84,18 +84,14 @@ body {
 .hero {
   padding: clamp(30px, 6vw, 56px);
   text-align: center;
-  position: relative;
-  overflow: hidden;
 }
 
-.hero::after {
-  content: "🍀";
-  position: absolute;
-  left: 10px;
-  bottom: 10px;
-  color: rgba(142, 190, 154, 0.22);
-  font-size: 7rem;
-  transform: rotate(-12deg);
+.hero-banner {
+  display: block;
+  width: min(100%, 680px);
+  height: auto;
+  margin: 0 auto 18px;
+  border-radius: 18px;
 }
 
 .kicker {
@@ -183,6 +179,7 @@ ul { padding-left: 1.3rem; }
   .nav { align-items: flex-start; flex-direction: column; }
   .nav-links { justify-content: flex-start; }
   .hero, .card { border-radius: 22px; }
+  .hero-banner { border-radius: 12px; }
 }
 
 .social-item {
