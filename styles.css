@@ -39,11 +39,17 @@ body {
 }
 
 .brand {
+  display: block;
+  flex: 0 1 320px;
+  line-height: 0;
   text-decoration: none;
   color: var(--text);
-  font-weight: 800;
-  font-size: 1.35rem;
-  letter-spacing: 0.01em;
+}
+
+.brand-banner {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .nav-links {
@@ -84,14 +90,6 @@ body {
 .hero {
   padding: clamp(30px, 6vw, 56px);
   text-align: center;
-}
-
-.hero-banner {
-  display: block;
-  width: min(100%, 680px);
-  height: auto;
-  margin: 0 auto 18px;
-  border-radius: 18px;
 }
 
 .kicker {
@@ -177,9 +175,9 @@ ul { padding-left: 1.3rem; }
 
 @media (max-width: 640px) {
   .nav { align-items: flex-start; flex-direction: column; }
+  .brand { flex-basis: auto; width: min(100%, 340px); }
   .nav-links { justify-content: flex-start; }
   .hero, .card { border-radius: 22px; }
-  .hero-banner { border-radius: 12px; }
 }
 
 .social-item {
