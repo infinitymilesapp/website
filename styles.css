@@ -79,6 +79,27 @@ body {
   box-shadow: 0 10px 24px rgba(183, 117, 117, 0.18);
 }
 
+.play-button {
+  background: #5f9e79;
+  color: #fff;
+  border-color: #5f9e79;
+}
+
+.play-button:hover,
+.play-button:focus-visible {
+  background: #4e8968;
+  color: #fff;
+}
+
+.play-button span {
+  margin-left: 0.35rem;
+  font-size: 1.05em;
+}
+
+.availability-action {
+  justify-content: flex-start;
+}
+
 .hero,
 .card {
   background: rgba(255, 250, 250, 0.86);
