@@ -96,8 +96,35 @@ body {
   font-size: 1.05em;
 }
 
+.testflight-button {
+  background: #4d4545;
+  color: #fff;
+  border-color: #4d4545;
+}
+
+.testflight-button:hover,
+.testflight-button:focus-visible {
+  background: #342e2e;
+  color: #fff;
+}
+
+.testflight-button span {
+  margin-left: 0.35rem;
+  font-size: 1.05em;
+}
+
+.beta-note {
+  margin: 12px auto 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
 .availability-action {
   justify-content: flex-start;
+}
+
+.availability-note {
+  margin-left: 0;
 }
 
 .hero,
