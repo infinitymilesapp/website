@@ -267,3 +267,23 @@ ul { padding-left: 1.3rem; }
   outline: 2px solid #bc7474;
   outline-offset: 3px;
 }
+
+/* Release preparation: screenshots and support. */
+.button.primary.play-button { background: #477b5b; border-color: #477b5b; color: #fff; }
+.button.primary.play-button:hover { background: #365f46; }
+.hero h1 { margin: 8px 0 24px; color: #503d37; }
+.screenshot-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px 16px; margin-top: 24px; }
+.screenshot-grid figure { margin: 0; min-width: 0; }
+.screenshot-grid img { display: block; width: 100%; height: auto; border-radius: 14px; border: 1px solid var(--line); }
+.screenshot-grid figcaption { margin-top: 10px; font-size: .9rem; color: var(--muted); }
+a:focus-visible, summary:focus-visible { outline: 3px solid #477b5b; outline-offset: 4px; }
+.faq { padding: 16px 0; border-bottom: 1px solid var(--line); }
+.faq summary { cursor: pointer; font-weight: 700; color: #5b3d3d; }
+.support-email { overflow-wrap: anywhere; }
+@media (max-width: 640px) {
+ .screenshot-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 10px; }
+ .nav { flex-direction: column; }
+ .brand { flex: auto; width: min(300px, 75%); }
+ .nav-links { flex: auto; justify-content: flex-start; }
+}
+@media (max-width: 360px) { .screenshot-grid { grid-template-columns: 1fr; } }
